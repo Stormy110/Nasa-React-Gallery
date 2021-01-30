@@ -8,6 +8,7 @@ import Clear from "./Components/Clear";
 import SpaceCard from "./Components/SpaceCard";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import SearchOneButton from "./Components/SearchOne";
+import Video from './Video.mp4';
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
 
   return (
     <Router>
+      <Video Video={Video}/>
       <nav className="nav-bar">
         <Link to="/">
           <button>Home</button>
