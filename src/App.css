@@ -2,13 +2,16 @@
   text-align: center;
 }
 
-.navbar {
+.nav-bar {
   display:flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: lightseagreen;
+  
   color: white;
   padding: 15px;
+}
+nav {
+  background-color: transparent;
 }
 
 
@@ -34,4 +37,22 @@
 #space-card {
   width:600px;
   height: 600px;
+}
+
+
+
+button {
+  background-color: silver;
+}
+button:focus {
+  background-color: silver;;
+}
+
+.gallery-buttons {
+  display:flex;
+  justify-content: space-evenly;
+}
+body {
+  background-image: url('https://www.kolpaper.com/wp-content/uploads/2020/04/Cloudy-Earth-Wallpaper.jpg')
+  
 }

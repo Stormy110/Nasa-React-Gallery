@@ -9,6 +9,7 @@ import SpaceCard from "./Components/SpaceCard";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import SearchOneButton from "./Components/SearchOne";
 
+
 function App() {
   const [spaceData, setSpaceData] = useState([]);
   const [spacePic, setSpacePic] = useState({});
@@ -49,7 +50,7 @@ function App() {
 
   return (
     <Router>
-      <nav className="navbar">
+      <nav className="nav-bar">
         <Link to="/">
           <button>Home</button>
         </Link>
@@ -65,20 +66,24 @@ function App() {
       </nav>
       <Switch>
         <Route exact path="/">
-          <Home />
+            <Home />
         </Route>
         <Route path="/about">
           <About />
         </Route>
         <Route path="/space-fact">
           <div className="space-card">
+            <br/>
           <SearchOneButton fetchRandomSpacePic={fetchRandomSpacePic} />
           <SpaceCard spacePic={spacePic}/>
           </div>
         </Route>
         <Route path="/pictures">
+          <br/>
+          <div className="gallery-buttons">
           <SearchButton fetchSpacePicGallery={fetchSpacePicGallery} />
           <Clear clearPics={clearPics} />
+          </div>
           <Gallery
             fetchSpacePicGallery={fetchSpacePicGallery}
             spaceData={spaceData}

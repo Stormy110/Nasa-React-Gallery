@@ -6,13 +6,13 @@ function Gallery(props) {
 
     return (
         <div className="gallery" >
-            <ul>
+            
                 {
                     data.map((s) => (
-                        <li key={s[0].url}><Card hdurl={s[0].hdurl} title={s[0].title} date={s[0].date} explanation={s[0].explanation}/></li>
+                        <p key={s[0].url}><Card hdurl={s[0].hdurl} title={s[0].title} date={s[0].date} explanation={s[0].explanation}/></p>
                     ))
                 }
-            </ul>
+            
         </div>
     )
 }
