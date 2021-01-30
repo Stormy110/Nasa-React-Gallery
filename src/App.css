@@ -34,6 +34,10 @@ nav {
  
 }
 
+.gallery-cards {
+
+}
+
 #space-card {
   width:600px;
   height: 600px;
@@ -51,8 +55,4 @@ button:focus {
 .gallery-buttons {
   display:flex;
   justify-content: space-evenly;
-}
-body {
-  background-image: url('https://www.kolpaper.com/wp-content/uploads/2020/04/Cloudy-Earth-Wallpaper.jpg')
-  
 }
