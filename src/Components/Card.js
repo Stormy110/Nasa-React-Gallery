@@ -3,9 +3,9 @@ import React from 'react';
 function Card(props) {
     return (
        
-        <div className="card">
+        <div className="card small">
           <div className="card-image waves-effect waves-block waves-light pic-small">
-                <img className="activator" src={props.hdurl} alt={props.title}/>
+                <img className="activator" src={props.hdurl ? props.hdurl : props.url} alt={props.title}/>
           </div>
           <div className="card-content">
             <span className="card-title activator grey-text text-darken-4">{props.title}<i className="material-icons right">^</i></span>

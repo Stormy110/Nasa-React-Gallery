@@ -42,7 +42,7 @@ function App() {
       }) // Convert data to json
       .then(function (data) {
         console.log(data);
-        let results = [...spaceData, data];
+        let results = [data, ...spaceData];
         console.log(results)
         setSpaceData(results);
       });
