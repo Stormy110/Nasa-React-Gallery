@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.card-title{
+  color: black
 }
 
 .nav-bar {
@@ -20,6 +24,13 @@ nav {
   height: 400px;
 }
 
+.waves-effect.pic-small {
+  height: 250px;
+}
+
+.waves-effect {
+  height: 450px;
+}
 
 .gallery {
   display:flex;
@@ -34,8 +45,25 @@ nav {
  
 }
 
-.gallery-cards {
+#about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  
+}
+#iss-pos {
+  height:300px;
+  width: 600px;
+  
+}
 
+.station-feed {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
 }
 
 #space-card {
@@ -43,16 +71,25 @@ nav {
   height: 600px;
 }
 
-
+.btn {
+  background-color: black;
+}
 
 button {
-  background-color: silver;
+  background-color: black;
+  
 }
 button:focus {
-  background-color: silver;;
+  background-color: black;
+  
 }
 
 .gallery-buttons {
   display:flex;
   justify-content: space-evenly;
+}
+
+#myVideo {
+  z-index: -1;
+  position:absolute;
 }

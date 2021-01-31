@@ -4,7 +4,7 @@ function Card(props) {
     return (
        
         <div className="card">
-          <div className="card-image waves-effect waves-block waves-light">
+          <div className="card-image waves-effect waves-block waves-light pic-small">
                 <img className="activator" src={props.hdurl} alt={props.title}/>
           </div>
           <div className="card-content">

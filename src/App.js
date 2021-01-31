@@ -8,8 +8,10 @@ import Clear from "./Components/Clear";
 import SpaceCard from "./Components/SpaceCard";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import SearchOneButton from "./Components/SearchOne";
-import video1 from './Video.mp4';
 import Video from './Components/Video';
+import SpaceStation from './Components/SpaceStation';
+
+
 
 
 function App() {
@@ -52,19 +54,23 @@ function App() {
 
   return (
     <Router>
-      <Video video={video1}/>
+      <Video />
       <nav className="nav-bar">
         <Link to="/">
-          <button>Home</button>
+          <button type="button" className="btn btn-dark">Home</button>
+          
         </Link>
         <Link to="/about">
-          <button>About</button>
+          <button type="button" className="btn btn-dark">About</button>
         </Link>
         <Link to="/space-fact">
-          <button>Random Space Fact</button>
+          <button type="button" className="btn btn-dark">Random Space Image</button>
         </Link>
         <Link to="/pictures">
-          <button>Space Gallery</button>
+          <button type="button" className="btn btn-dark">Space Gallery</button>
+        </Link>
+        <Link to="/station-feed">
+          <button type="button" className="btn btn-dark">ISS Station Feed</button>
         </Link>
       </nav>
       <Switch>
@@ -91,6 +97,9 @@ function App() {
             fetchSpacePicGallery={fetchSpacePicGallery}
             spaceData={spaceData}
           />
+        </Route>
+        <Route path="/station-feed">
+          <SpaceStation />
         </Route>
         <Route path="*">
           <h2>Page not found</h2>
