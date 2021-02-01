@@ -105,6 +105,7 @@ button:focus {
 #myVideo {
   z-index: -1;
   position:absolute;
+  background-size: cover;
 }
 body {
   font-family: 'Josefin Sans', sans-serif;
