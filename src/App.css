@@ -1,9 +1,14 @@
 .App {
   text-align: center;
+  
   font-family: 'Josefin Sans', sans-serif;
 }
 .card-title{
   color: black
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .nav-bar {
@@ -37,9 +42,11 @@ nav {
   justify-content: center;
   color: white;
   margin-top: 20%;
+  
 }
 .home-card h2 {
   animation: type 2s steps(600, end);
+  font-size: 10em;
 }
 @keyframes type{ 
   from { width: 0; } 
@@ -97,15 +104,19 @@ button:focus {
   
 }
 
+
+
 .gallery-buttons {
   display:flex;
   justify-content: space-evenly;
+
 }
 
 #myVideo {
   z-index: -1;
   position:absolute;
-  background-size: cover;
+  
+  
 }
 body {
   font-family: 'Josefin Sans', sans-serif;

@@ -2,6 +2,8 @@ import React from 'react';
 import SpaceVid from '../Video.mp4';
 
 function Video(props) {
+    
+
     return (
         <video id="myVideo"  loop muted autoPlay>
             <source src={SpaceVid} type="video/mp4"/>
