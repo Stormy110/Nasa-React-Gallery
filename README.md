@@ -1,5 +1,3 @@
-# Nasa Picture project
-
 # To Run
 - git clone
 - npm i
